@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Forms Review</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <img src="./img/burger-svgrepo-com.svg" alt="burger"height="70" width="70">
+    
+
+</head>
+<body>
+    
+    <h1>Create a burguer</h1>
+
+    <form action="" method="post">
+
+        <section><label for="protein">What type of protein would you like?</label>
+            <input type="text" name="protein" id="protein">
+            <hr>
+        </section>
+
+        <section>
+            <label for="patties">How many patties would you like?</label>
+            <input type="number" min="0" max="10" name="patties" id="protein">
+            <hr>
+        </section>
+
+        <section>
+            <label for="range">How do you want your patty cooked?</label>
+            <br>
+            Rare <input type="range" min="1" max="5" name="range" id="range"> Well-Done
+            <hr>
+        </section>
+        
+
+        <section>
+            <label for="like">What toppings would you like?</label>
+            <br>
+            <input type="checkbox" name="like" id="like">
+            <label for="Lettuce">Lettuce</label>
+            <input type="checkbox" name="like" id="like">
+            <label for="Tomato">Tomato</label>
+            <input type="checkbox" name="like" id="like">
+            <label for="Onion">Onion</label>
+            <hr>
+        </section>
+        
+        <section>
+            <label for="name">Would you like to add cheese?</label>
+            <br>
+            <input type="radio" name="yes" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="no" id="no">
+            <label for="no">No</label>
+            <hr>
+        </section>
+
+        <section>
+            <label for="name">What type of bun would you like?</label>
+        <select name="bun" id="bun">
+            <option value="sesamw">Sesame</option>
+            <option value="potato">Potato</option>
+            <option value="pretzel">Pretzel</option>
+        </select>
+        <hr>
+        </section>
+
+        <section>
+            <label for="name">What type of sauce would you like?</label>
+        <input type="text" list = "sauce" name="sauce" class="input">
+        <datalist id  ="sauce">
+            <option value="Ketchup"></option>
+            <option value="Mayo"></option>
+            <option value="Mustard"></option>
+        </datalist>
+        </section>
+
+        <section><hr>
+            <label for="name">Anything else you want to add?</label>
+            <br>
+        </section>
+
+        <section>
+            <textarea id="presentation" name="presentation" cols="40" rows="5"></textarea>
+        <hr>
+        </section>
+
+        <section>
+            <input type="submit" value="Submit">
+        </section>
+
+    </form>
+</body>
+</html>
